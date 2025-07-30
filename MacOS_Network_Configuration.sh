@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# For MacOS computers
 # turn off all unecessary network interfaces 
 sudo ifconfig {interface name} down #repeat as many times as needed for multiple interfaces
 
