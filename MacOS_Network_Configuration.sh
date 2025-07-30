@@ -5,17 +5,17 @@
 sudo ifconfig {interface name} down #repeat as many times as needed for multiple interfaces
 
 
-# set DNS servers & configure ip address using quad9 over wifi
+# set DNS servers & configure ip address using quad9 ipv4/ipv6
 sudo networksetup -setdnsservers Wi-fi 9.9.9.9 149.112.112.112 2620:fe::fe 2620:fe::9
 sudo networksetup -setsearchdomains Wi-Fi {insert search domain}
 sudo ipconfig set en1 INFORM {insert intended ip address} {dns mask} {router}
 
-# set DNS servers & configure ip address using cloudfare
+# set DNS servers & configure ip address using cloudfare ipv4/ipv6
 sudo networksetup -setdnsservers Wi-fi 1.1.1.3 1.0.0.3 2606:4700:4700::1113 2606:4700:4700::1003
 sudo networksetup -setsearchdomains Wi-Fi {insert search domain}
 sudo ipconfig set en1 INFORM {insert intended ip address} {dns mask} {router}
 
-# turn off unnecessary ipv4 services for wifi only users
+# turning off ethernet if only using wifi
 sudo networksetup -setv4off Ethernet
 sudo networksetup -setv4off Thunderbolt\ Bridge
 
