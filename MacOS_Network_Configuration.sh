@@ -7,7 +7,7 @@ sudo ifconfig {interface name} down #repeat as many times as needed for multiple
 # set DNS servers & configure ip address using quad9
 sudo networksetup -setdnsservers Wi-fi 9.9.9.9 149.112.112.112 2620:fe::fe 2620:fe::9
 sudo networksetup -setsearchdomains Wi-Fi tls://dns.quad9.net
-sudo ipconfig set en1 INFORM {insert desired ip addredd} {dns mask} {router}
+sudo ipconfig set en1 INFORM {insert intended ip address} {dns mask} {router}
 
 
 # turn off unnecessary ipv4 services for wifi only users
